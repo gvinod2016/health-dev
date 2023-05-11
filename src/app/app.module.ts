@@ -9,6 +9,12 @@ import { ContactUsComponent } from './feature/contact-us/contact-us.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { AboutComponent } from './components/about/about.component';
+import { BanerComponent } from './components/baner/baner.component';
+import { HealthComponent } from './components/health/health.component';
+import { MessageComponent } from './components/message/message.component';
+import { PlansComponent } from './components/plans/plans.component';
+import { WorkComponent } from './components/work/work.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { LayoutComponent } from './shared/layout/layout.component';
     ContactUsComponent,
     HeaderComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    AboutComponent,
+    BanerComponent,
+    HealthComponent,
+    MessageComponent,
+    PlansComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

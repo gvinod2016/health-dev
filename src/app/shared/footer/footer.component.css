@@ -1,0 +1,20 @@
+.color-p{
+    color: #d1d5db;
+}
+.color-f{
+    color: #9ca3af;
+    text-decoration: none;
+}
+.privacy:hover{
+    color: #9ca3af;
+    text-decoration: none;
+}
+.w-3{
+    width: 3%;
+}
+.bb-1{
+    border-bottom: 1px solid #9ca3af;
+}
+.bg-color::backdrop{
+    background-color: red;
+}
