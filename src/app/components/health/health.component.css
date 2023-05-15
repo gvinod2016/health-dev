@@ -1,35 +1,60 @@
-.w-48{
+.w-48 {
     width: 48%;
 }
-.color-1{
+
+.color-1 {
     color: #ffff;
 }
-.color-2{
+
+.color-2 {
     color: rgb(55 65 86);
 }
-.bg-color-1{
+
+.bg-color-1 {
     background-color: #bfdbfe;
 }
-.bg-color-2{
+
+.bg-color-2 {
     background-color: #ffff;
 }
-.bg-color-3{
+
+.bg-color-3 {
     background-color: rgb(96 165 250);
 }
-.radirs-10{
+
+.radirs-10 {
     border-radius: 10px;
 }
-.radirs-7{
+
+.radirs-7 {
     border-radius: 7px;
 }
-.a{
-    color: black;    
+
+.a {
+    color: black;
 }
-.answer:hover{
+
+.answer:hover {
     text-decoration: none;
     background-color: #f9fafb;
     color: black;
 }
-.fw-800{
+
+.fw-800 {
     font-weight: 800;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+@media screen and (max-width:575px) {
+    h3 {
+        font-size: 18px;
+    }
+
 }
