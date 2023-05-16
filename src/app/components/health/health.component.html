@@ -13,18 +13,46 @@
                     <h4 class='fw-800'> Qualify for Health Insurance under $10/mo.</h4>
                 </div>
             </div>
-            <div class='p-4 mb-2 radirs-10 bg-color-1 box-sha text-center' >
-                <div class='mb-3'>
-                    <h3 class='color-2 fw-400'>{{quotations.q}}</h3>
-                </div>
-                <div class='d-flex justify-content-center'>
-                    <div class='bg-color-2 answer pointer px-4 radirs-7 py-2 mr-4' (click)="onQuestionACtion( quotations.yes)">
-                        <div class='px-3  fw-500 '>Yes</div>
+            <div class='p-4 mb-2 radirs-10 bg-color-1 box-sha text-center'>
+                <ng-template [ngIf]="quotations.type === 'q'">
+                    <div class='mb-3'>
+                        <h3 class='color-2 fw-400'>{{quotations.q}}</h3>
                     </div>
-                    <div class='bg-color-2 answer pointer radirs-7 px-4 py-2' (click)="onQuestionACtion( quotations.no)">
-                        <div class='px-3  fw-500 '>No</div>
+                    <div class='d-flex justify-content-center'>
+                        <div class='bg-color-2 answer pointer px-4 radirs-7 py-2 mr-4'
+                            (click)="onQuestionACtion( quotations.yes)">
+                            <div class='px-3  fw-500 '>Yes</div>
+                        </div>
+                        <div class='bg-color-2 answer pointer radirs-7 px-4 py-2'
+                            (click)="onQuestionACtion( quotations.no)">
+                            <div class='px-3  fw-500 '>No</div>
+                        </div>
                     </div>
-                </div>
+                </ng-template>
+                <ng-template [ngIf]="quotations.type === 'call'">
+                    <div class="d-flex mb-4">
+                        <div class="col-12 px-0">
+                            <p class="mb-0">Takes about 4 minutes to apply over the phone!</p>
+                            <a href="tel: (888) 818-7077" class="btn bg-callnow w-100 text-white">
+                                <img class='w-15 ' src='./assets/images/phone.png' />
+                                Call Now</a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-12  px-0">
+                            <p class="mb-0">Or to instantly qualify...</p>
+                            <button class="btn w-100 bg-color-2">
+                                <img class='w-15 ' src='./assets/images/clicker.png' /> Apply Online</button>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template [ngIf]="quotations.type === 'input'">
+                    <div class="d-flex">
+                        <div class="col-12">
+                            <p class="mb-0">Waiting for plan details</p>
+                        </div>
+                    </div>
+                </ng-template>
             </div>
         </div>
     </div>

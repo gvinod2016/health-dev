@@ -15,104 +15,138 @@ export class HealthComponent {
           q: 'Confirming your zip code is 500032',
           yes: {
             q: 'Can you take a phone call now?',
-            yes: 'Initiate call to U65 Phone Number',
-            no: 'To MediaAlpha clicks results'
-
+            yes: { type: 'call', phoneNo: '(888) 818-7077' },
+            no: { q: 'To MediaAlpha clicks results', type: 'input' },
+            type: 'q'
           },
           no: {
             q: 'Got it! Are you looking for coverage in Telangana',
             yes: {
               q: 'Can you take a phone call now?',
-              yes: 'Initiate call to U65 Phone Number',
-              no: 'To MediaAlpha clicks results'
+              yes: { type: 'call', phoneNo: '(888) 818-7077' },
+              no: { q: 'To MediaAlpha clicks results', type: 'input' },
+              type: 'q'
             },
             no: {
               q: 'Can you take a phone call now?',
-              yes: 'Initiate call to U65 Phone Number',
-              no: 'To MediaAlpha clicks results'
-            }
-          }
+              yes: { type: 'call', phoneNo: '(888) 818-7077' },
+              no: { q: 'To MediaAlpha clicks results', type: 'input' },
+              type: 'q'
+            },
+            type: 'q'
+          },
+          type: 'q'
         },
         no: {
           q: 'Confirming your zip code is 500032',
           yes: {
             q: 'Can you take a phone call now?',
-            yes: null,
-            no: 'To MediaAlpha clicks results'
+            yes: { type: 'call', phoneNo: '(888) 818-7077' },
+            no: { q: 'To MediaAlpha clicks results', type: 'input' },
+            type: 'q'
           },
           no: {
             q: 'Got it! Are you looking for coverage in Telangana',
             yes: {
               q: 'Can you take a phone call now?',
-              yes: 'Initiate call to U65 Phone Number',
-              no: 'To MediaAlpha clicks results'
+              yes: { type: 'call', phoneNo: '(888) 818-7077' },
+              no: { q: 'To MediaAlpha clicks results', type: 'input' },
+              type: 'q'
             },
             no: {
               q: 'Can you take a phone call now?',
-              yes: 'Initiate call to U65 Phone Number',
-              no: 'To MediaAlpha clicks results'
-            }
-          }
-        }
+              yes: { type: 'call', phoneNo: '(888) 818-7077' },
+              no: { q: 'To MediaAlpha clicks results', type: 'input' },
+              type: 'q'
+            },
+            type: 'q'
+          },
+          type: 'q'
+        },
+        type: 'q'
       },
       no: {
         q: 'Do you have Medicare Parts A and B?	',
         yes: {
           q: 'Can you take a phone call now?',
-          yes: {
-            q: 'Initiate call to Medicare Phone Number '
-          },
+          yes: { type: 'call', phoneNo: '(888) 818-7077' },
           no: {
             q: 'Are you interested in learning more about your options online?',
             yes: {
-              q: 'Confirming your zip code is {zip}',
-              yes: 'To MediaAlpha clicks results',
+              q: 'Confirming your zip code is 500032',
+              yes: { q: 'To MediaAlpha clicks results', type: 'input' },
               no: {
-                q: 'Got it! Are you looking for coverage in {state}',
-                yes: 'To MediaAlpha clicks results',
-                no: 'Back to: Can you take a phone call now?'
-              }
+                q: 'Got it! Are you looking for coverage in Telangana',
+                yes: { q: 'To MediaAlpha clicks results', type: 'input' },
+                no: {
+                  q: 'Can you take a phone call now?',
+                  yes: { type: 'call', phoneNo: '(888) 818-7077' },
+                  no: { q: 'To MediaAlpha clicks results', type: 'input' },
+                  type: 'q'
+                },
+                type: 'q'
+              },
+              type: 'q'
             },
             no: {
-              q: 'Got it! Are you looking for coverage in {state}	',
-              yes: 'To MediaAlpha clicks results',
-              no: 'Back to: Can you take a phone call now?'
-            }
-          }
+              q: 'Got it! Are you looking for coverage in Telangana	',
+              yes: { q: 'To MediaAlpha clicks results', type: 'input' },
+              no: {
+                q: ' Can you take a phone call now?',
+                yes: { type: 'call', phoneNo: '(888) 818-7077' },
+                no: { q: 'To MediaAlpha clicks results', type: 'input' },
+                type: 'q'
+              },
+              type: 'q'
+            },
+            type: 'q'
+          },
+          type: 'q'
         },
         no: {
           q: 'Can you take a phone call now?',
-          yes: {
-            q: 'Initiate call to Medicare Phone Number',
-          },
+          yes: { type: 'call', phoneNo: '(888) 818-7077' },
           no: {
             q: 'Are you interested in learning more about your options online?',
             yes: {
-              q: 'Confirming your zip code is {zip}',
-              yes: {
-                q: 'To MediaAlpha clicks results',
-              },
+              q: 'Confirming your zip code is 500032',
+              yes: { q: 'To MediaAlpha clicks results', type: 'input' },
               no: {
-                q: 'Got it! Are you looking for coverage in {state}',
-                yes: 'To MediaAlpha clicks results',
-                no: 'Back to: Can you take a phone call now?'
-              }
+                q: 'Got it! Are you looking for coverage in Telangana',
+                yes: { q: 'To MediaAlpha clicks results', type: 'input' },
+                no: {
+                  q: 'Can you take a phone call now?',
+                  yes: { type: 'call', phoneNo: '(888) 818-7077' },
+                  no: { q: 'To MediaAlpha clicks results', type: 'input' },
+                  type: 'q'
+                },
+                type: 'q'
+              },
+              type: 'q'
             },
             no: {
-              q: 'Got it! Are you looking for coverage in {state}',
-              yes: 'To MediaAlpha clicks results',
-              no: 'Back to: Can you take a phone call now?'
-            }
-          }
-        }
+              q: 'Got it! Are you looking for coverage in Telangana',
+              yes: { q: 'To MediaAlpha clicks results', type: 'input' },
+              no: {
+                q: 'Can you take a phone call now?',
+                yes: { type: 'call', phoneNo: '(888) 818-7077' },
+                no: { q: 'To MediaAlpha clicks results', type: 'input' },
+                type: 'q'
+              },
+              type: 'q'
+            },
+            type: 'q'
+          },
+          type: 'q'
+        },
+        type: 'q'
       },
-      id: 'q1'
-    }
-
-    ;
+      type: 'q'
+    };
 
   onQuestionACtion(chlidNode: any) {
     console.log(chlidNode, 'chlidNode')
+
     this.quotations = chlidNode
 
   }
