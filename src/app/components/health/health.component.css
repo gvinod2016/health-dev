@@ -64,3 +64,6 @@ h3 {
 .w-15{
     width: 15px;
 }
+a:focus {
+    box-shadow: none;
+}

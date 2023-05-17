@@ -59,7 +59,7 @@ export class HealthComponent {
               no: { q: 'To MediaAlpha clicks results', type: 'input' },
               type: 'q'
             },
-            type: 'q'
+            type: 'q' 
           },
           type: 'q'
         },
