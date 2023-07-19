@@ -13,7 +13,7 @@
                     <h4 class='fw-800'> Qualify for Health Insurance under $10/mo.</h4>
                 </div>
             </div>
-            <div class='p-4 mb-2 radirs-10 bg-color-1 box-sha text-center'>
+            <div class='p-4 mb-2 radirs-10 bg-color-1 box-sha text-center' *ngIf="quotations">
                 <ng-template [ngIf]="quotations.type === 'q'">
                     <div class='mb-3'>
                         <h3 class='color-2 fw-400'>{{quotations.q}}</h3>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-6">
-                                <a href="tel: (888) 818-7077" class="btn bg-callnow w-100 text-white">
+                                <a [href]="'tel:'+ quotations.phoneNo" class="btn bg-callnow w-100 text-white">
                                     <img class='w-15 ' src='./assets/images/phone.png' />
                                     Call Now
                                 </a>
@@ -47,7 +47,7 @@
                 <ng-template [ngIf]="quotations.type === 'input'">
                     <div class="d-flex">
                         <div class="col-12">
-                            <p class="mb-0">Waiting for plan details</p>
+                            <a target="_self" class="color-2 text-decoration-none" href="https://medicareconsumer.com/u65-health-insurance/?location=01827"><p class="mb-0 color-2 plan-details">U65 Health Insurance Plan Details</p></a>
                         </div>
                     </div>
                 </ng-template>

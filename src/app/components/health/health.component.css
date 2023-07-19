@@ -54,7 +54,10 @@ h3 {
 .bg-callnow{
     background-color: #f97216;
 }
-
+.plan-details{
+    font-size: 24px;
+    text-decoration: underline;
+}
 @media screen and (max-width:575px) {
     h3 {
         font-size: 18px;

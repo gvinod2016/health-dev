@@ -7,10 +7,10 @@ import { LayoutComponent } from './shared/layout/layout.component';
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
-      { path: 'home', component: HomeComponent },
+      { path: '', component: HomeComponent },
       { path: 'about-us', component: AboutUsComponent },
       { path: 'contact-us', component: ContactUsComponent },
-      { path: '',   redirectTo: '/home', pathMatch: 'full' },
+      { path: '',   redirectTo: '/', pathMatch: 'full' },
      
     ]
   },
